@@ -1,10 +1,18 @@
 import React from "react";
+import { FaUser } from "react-icons/fa6";
 
 const Header = () => {
   return (
-    <section className="flex justify-between w-screen p-4">
-      <div className="font-bold text-white ">Abhinav</div>
-      <div className="mx-32"></div>
+    <section className="fixed flex z-50 place-items-center justify-between w-10/12 p-4 px-16 shadow-lg rounded bg-l_primary dark:bg-d_primary shadow-l_secondary/50 dark:shadow-d_secondary/50">
+      <div className="text-l_textColor dark:text-d_textColor text-sm font-bold">
+        PORTFOLIO | ABHINAV
+      </div>
+      <a
+        href="mailto:abhinavmaurya476@gmail.com"
+        className="transform transition-transform py-2 px-4 rounded gap-2 place-items-center font-bold duration-300 hover:-translate-y-1 flex bg-d_primary dark:bg-l_primary text-d_textColor dark:text-l_textColor hover:bg-d_secondary hover:dark:bg-l_secondary"
+      >
+        Contact Me <FaUser size={18} />
+      </a>
     </section>
   );
 };
