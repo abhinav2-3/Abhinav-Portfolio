@@ -2,7 +2,7 @@ import Screen from "./Components/Screen";
 
 function App() {
   return (
-    <div>
+    <div className="bg-l_primary dark:bg-d_primary">
       <Screen />
     </div>
   );

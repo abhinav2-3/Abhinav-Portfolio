@@ -3,7 +3,7 @@ import { FaUser } from "react-icons/fa6";
 
 const Header = () => {
   return (
-    <section className="fixed flex z-50 place-items-center justify-between w-10/12 p-4 px-16 shadow-lg rounded bg-l_primary dark:bg-d_primary shadow-l_secondary/50 dark:shadow-d_secondary/50">
+    <nav className="sticky w-full flex z-50 place-items-center justify-between p-4 px-8 shadow-lg rounded bg-l_primary dark:bg-d_primary shadow-l_secondary/50 dark:shadow-d_secondary/50">
       <div className="text-l_textColor dark:text-d_textColor text-sm font-bold">
         PORTFOLIO | ABHINAV
       </div>
@@ -13,7 +13,7 @@ const Header = () => {
       >
         Contact Me <FaUser size={18} />
       </a>
-    </section>
+    </nav>
   );
 };
 

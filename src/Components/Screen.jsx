@@ -3,18 +3,20 @@ import Sidebar from "./Sidebar/SideBar";
 import Header from "./Header";
 import Hero from "./Hero";
 import Projects from "./Projects";
+import Skills from "./Skills";
 
 const Screen = () => {
   return (
-    <section className="flex w-full h-screen bg-cover bg-fixed bg-no-repeat bg-center bg-l_primary dark:bg-d_primary">
-      <div className="w-1/5">
+    <section className="flex w-screen">
+      <div className="fixed h-screen fixed border-[1px] sm:w-[300px] z-30">
         <Sidebar />
       </div>
-      <main className="w-4/5">
+      <main className="flex-1 pl-0 lg:pl-[300px]">
         <Header />
-        <div className="relative top-20">
+        <div className="relative w-full top-20">
           <Hero />
           <Projects />
+          <Skills />
         </div>
       </main>
     </section>

@@ -8,7 +8,7 @@ import { TbBrandLeetcode } from "react-icons/tb";
 
 const Menu = () => {
   return (
-    <div className="p-8 w-auto m-3 overflow-y-auto h-full bg-l_secondary dark:bg-d_secondary text-l_textColor dark:text-d_textColor rounded-md">
+    <div className="p-8 border-[1px] w-auto m-3 overflow-y-auto h-full bg-l_secondary dark:bg-d_secondary text-l_textColor dark:text-d_textColor rounded-md">
       <div className="flex flex-col justify-center place-items-start p-6 gap-5">
         <a
           href="/"

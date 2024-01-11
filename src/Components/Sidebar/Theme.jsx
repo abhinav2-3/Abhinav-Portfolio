@@ -14,7 +14,7 @@ const Theme = () => {
   };
 
   return (
-    <div className="h-10 w-auto flex place-items-center justify-center">
+    <div className="h-10 w-full border-[1px] flex place-items-center justify-center">
       <button
         className="text-l_textColor dark:text-d_textColor"
         onClick={themeHandler}
