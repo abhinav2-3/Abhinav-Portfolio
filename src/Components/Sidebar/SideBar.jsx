@@ -4,7 +4,7 @@ import Theme from "./Theme";
 
 const Sidebar = () => {
   return (
-    <aside className="toggle flex flex-col w-full">
+    <aside className="border-[1px] flex flex-col">
       <Theme />
       <Menu />
     </aside>

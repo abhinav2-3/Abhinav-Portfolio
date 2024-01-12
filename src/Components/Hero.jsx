@@ -4,8 +4,9 @@ import { MdDownload } from "react-icons/md";
 const Hero = () => {
   const resumeURL =
     "https://drive.google.com/file/d/1-uDMYHCAR5LxpnDzAmyi1-7vfByeQ-b6/view?usp=sharing";
+
   return (
-    <div className="h-40 w-full bg-hero-cover bg-no-repeat bg-cover bg-center rounded-lg">
+    <div className="h-40 mt-24 bg-hero-cover bg-no-repeat bg-cover bg-center rounded-lg">
       <div className="flex text-d_textColor h-full justify-around place-items-center bg-blur backdrop-filter backdrop-blur">
         <img
           className="w-28 h-28 rounded-full stroke-4"

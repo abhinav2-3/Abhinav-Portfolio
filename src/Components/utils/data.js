@@ -41,3 +41,31 @@ export const projectData = [
     hrefURL: "https://my-portfolio-olive-one.vercel.app/",
   },
 ];
+
+export const techStack = [
+  {
+    id: 1,
+    title: "Frontend",
+    skills: ["HTML5", "CSS", "SASS", "Tailwind CSS", "JavaSript", "React.js"],
+  },
+  {
+    id: 2,
+    title: "Backend",
+    skills: ["Node.js", "Express.js", "Auth0"],
+  },
+  {
+    id: 3,
+    title: "Database",
+    skills: ["MongoDB"],
+  },
+  {
+    id: 4,
+    title: "Tools",
+    skills: ["GitHub", "Postman"],
+  },
+  {
+    id: 5,
+    title: "Language",
+    skills: ["Java"],
+  },
+];
