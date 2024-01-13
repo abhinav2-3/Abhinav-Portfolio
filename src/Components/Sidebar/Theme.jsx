@@ -14,7 +14,7 @@ const Theme = () => {
   };
 
   return (
-    <div className="h-12 grid place-items-center border-[1px]">
+    <div className="h-12 grid place-items-center">
       <button
         className="text-l_textColor dark:text-d_textColor"
         onClick={themeHandler}
