@@ -3,11 +3,11 @@ import cn from "classnames";
 
 const TechCard = ({ title, tech }) => {
   return (
-    <div className="rounded-md text-d_primary dark:text-l_primary bg-l_secondary dark:bg-d_secondary">
-      <h1 className="font-bold text-center tracking-wider py-4 opacity-80">
+    <div className="lg:h-72 rounded-md flex flex-col flex-1 place-items-start gap-2 p-4 text-d_primary dark:text-l_primary bg-l_secondary dark:bg-d_secondary">
+      <h1 className="font-bold text-center tracking-wider opacity-80">
         {title}
       </h1>
-      <div className="flex flex-wrap gap-2 p-2 place-items-center justify-center">
+      <div className="flex flex-wrap gap-2 lg:place-items-center">
         {tech.map((item, i) => {
           return (
             <div

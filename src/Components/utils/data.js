@@ -46,7 +46,7 @@ export const miniProjectsData = [
   {
     id: 2,
     title: "Real Estate",
-    techStack: "React.js",
+    techStack: "React.js, HTML5 & CSS",
     imgSrc:
       "https://images-wixmp-530a50041672c69d335ba4cf.wixmp.com/templates/image/8367ad40ecf0474eb436a0852ad79e5f.jpg",
     hrefURL: "https://realestate-beta-three.vercel.app/",
@@ -68,3 +68,6 @@ export const miniProjectsData = [
     hrefURL: "https://github.com/abhinav2-3/Weather-App/tree/master",
   },
 ];
+
+export const resumeURL =
+  "https://drive.google.com/file/d/1-uDMYHCAR5LxpnDzAmyi1-7vfByeQ-b6/view?usp=sharing";

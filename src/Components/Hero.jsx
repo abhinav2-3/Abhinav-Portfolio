@@ -1,10 +1,7 @@
 import React from "react";
 import { MdDownload } from "react-icons/md";
-
+import { resumeURL } from "./utils/data";
 const Hero = () => {
-  const resumeURL =
-    "https://drive.google.com/file/d/1-uDMYHCAR5LxpnDzAmyi1-7vfByeQ-b6/view?usp=sharing";
-
   return (
     <div className="h-40 mt-24 bg-hero-cover bg-no-repeat bg-cover bg-center rounded-lg">
       <div className="flex text-d_textColor h-full justify-around place-items-center bg-blur backdrop-filter backdrop-blur">
@@ -13,7 +10,7 @@ const Hero = () => {
           src={"../image/avatar.png"}
           alt="Abhinav"
         />
-        <div className="text-d_textColor flex flex-col">
+        <div className="text-d_textColor md:flex flex-col hidden">
           <h1 className="uppercase font-bold text-3xl">Abhinav Maurya</h1>
           <span className="uppercase font-normal flex justify-center text-sm tracking-widest">
             Full Stack Developer [MERN]
