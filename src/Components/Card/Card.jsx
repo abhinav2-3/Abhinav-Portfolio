@@ -1,18 +1,17 @@
 import React from "react";
-
 const Card = ({ title, hrefURL, imgSrc, techStack }) => {
   return (
     <a
       href={hrefURL || "/"}
       target="_blank"
-      className="h-auto rounded-lg transition-transform duration-300 hover:-translate-y-2 bg-d_secondary dark:bg-l_secondary text-d_textColor dark:text-l_textColor"
+      className="h-auto text-l_textColor dark:text-d_textColor"
       rel="noreferrer"
     >
       <div className="flex flex-col overflow-hidden gap-2 overflow-ellipsis">
         <img
           width={700}
           height={700}
-          className="object-cover rounded-t-lg aspect-video"
+          className="object-cover aspect-video"
           src={imgSrc}
           alt={title}
         />

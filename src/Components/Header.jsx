@@ -3,13 +3,16 @@ import { FaUser } from "react-icons/fa6";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { RxCross2 } from "react-icons/rx";
 import Theme from "./Sidebar/Theme";
+import { motion } from "framer-motion";
 
 const Header = ({ onToggleMenu, showMenu }) => {
-  console.log(showMenu);
   return (
-    <nav
+    <motion.nav
       style={{ width: "-webkit-fill-available" }}
       className="fixed lg:flex-row-reverse flex z-30 place-items-center justify-between p-4 px-8 shadow-lg rounded bg-l_primary dark:bg-d_primary shadow-l_secondary/50 dark:shadow-d_secondary/50"
+      initial={{ opacity: 0, y: -100 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ delay: 4.5, duration: 0.5 }}
     >
       <div>
         <a
@@ -32,7 +35,7 @@ const Header = ({ onToggleMenu, showMenu }) => {
       >
         {showMenu ? <RxCross2 size={25} /> : <GiHamburgerMenu size={25} />}
       </button>
-    </nav>
+    </motion.nav>
   );
 };
 

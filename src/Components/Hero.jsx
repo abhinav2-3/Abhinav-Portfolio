@@ -1,9 +1,16 @@
 import React from "react";
 import { MdDownload } from "react-icons/md";
 import { resumeURL } from "./utils/data";
+import { motion } from "framer-motion";
+
 const Hero = () => {
   return (
-    <div className="h-40 mt-24 bg-hero-cover bg-no-repeat bg-cover bg-center rounded-lg">
+    <motion.div
+      className="h-40 mt-24 bg-hero-cover bg-no-repeat bg-cover bg-center rounded-lg"
+      initial={{ opacity: 0, scale: 0.7 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{ delay: 4.5, duration: 0.2 }}
+    >
       <div className="flex text-d_textColor h-full justify-around place-items-center bg-blur backdrop-filter backdrop-blur">
         <img
           className="w-28 h-28 rounded-full stroke-4"
@@ -25,7 +32,7 @@ const Hero = () => {
           Resume <MdDownload size={20} />
         </a>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

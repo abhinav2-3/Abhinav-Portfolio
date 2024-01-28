@@ -1,10 +1,23 @@
 import React from "react";
 import { FaUser } from "react-icons/fa6";
 import video from "./utils/video.mp4";
+import { motion } from "framer-motion";
 
 const About = () => {
   return (
-    <div id="about" className="my-4 h-full grid place-items-center relative">
+    <motion.div
+      id="about"
+      className="my-4 h-full grid place-items-center relative"
+      initial={{ scale: 0.3 }}
+      whileInView={{
+        scale: [0.3, 1.1, 1],
+      }}
+      transition={{
+        duration: 1,
+        ease: "easeInOut",
+        times: [0, 0.2, 1],
+      }}
+    >
       <video
         src={video}
         autoPlay
@@ -55,7 +68,7 @@ const About = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

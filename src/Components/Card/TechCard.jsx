@@ -1,9 +1,20 @@
 import React from "react";
 import cn from "classnames";
+import { motion } from "framer-motion";
 
-const TechCard = ({ title, tech }) => {
+const TechCard = ({ title, tech, reference }) => {
   return (
-    <div className="lg:h-72 rounded-md flex flex-col flex-1 place-items-start gap-2 p-4 text-d_primary dark:text-l_primary bg-l_secondary dark:bg-d_secondary">
+    <motion.div
+      className="lg:h-72 rounded-md flex flex-col flex-1 place-items-start gap-2 p-4 text-d_primary dark:text-l_primary bg-l_secondary dark:bg-d_secondary"
+      drag
+      dragConstraints={reference}
+      whileDrag={{ scale: 1.1 }}
+      dragTrasition={{
+        type: "spring",
+        bounceStiffness: 100,
+        bounceDamping: 300,
+      }}
+    >
       <h1 className="font-bold text-center tracking-wider opacity-80">
         {title}
       </h1>
@@ -32,7 +43,7 @@ const TechCard = ({ title, tech }) => {
           );
         })}
       </div>
-    </div>
+    </motion.div>
   );
 };
 

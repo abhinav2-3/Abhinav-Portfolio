@@ -7,12 +7,14 @@ import Sidebar from "./Components/Sidebar/SideBar";
 import TechStacks from "./Components/TechStacks";
 import { projectData, miniProjectsData } from "./Components/utils/data";
 import Loader from "./Components/Loader";
+import ProgressBar from "./Components/ProgressBar";
 
 function App() {
   const [showMenu, setShowMenu] = useState(false);
   const menuHandler = () => {
     setShowMenu(!showMenu);
   };
+
   return (
     <main id="main">
       <Loader />
@@ -37,6 +39,7 @@ function App() {
           </main>
         </div>
       </div>
+      <ProgressBar />
     </main>
   );
 }

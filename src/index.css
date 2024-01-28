@@ -4,7 +4,16 @@
 
 * {
     scroll-behavior: smooth;
-    transition: all 0.2s;
+    transition: all 0.3s;
+}
+
+.progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background: red;
 }
 
 #loader h1 {
