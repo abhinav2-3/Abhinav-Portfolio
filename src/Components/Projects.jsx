@@ -1,6 +1,6 @@
 import React from "react";
-import Card from "./Card/Card";
 import { motion } from "framer-motion";
+import ProjectCard from "./Card/ProjectCard";
 
 const Projects = ({ title, data }) => {
   return (
@@ -21,7 +21,7 @@ const Projects = ({ title, data }) => {
                 transition: { delay: 0 },
               }}
             >
-              <Card
+              <ProjectCard
                 key={item.id}
                 title={item.title}
                 imgSrc={item.imgSrc}

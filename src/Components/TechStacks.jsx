@@ -19,7 +19,15 @@ const TechStacks = () => {
         <TechCard
           reference={ref}
           title={"Frontend"}
-          tech={["HTML5", "CSS", "SASS", "Tailwind", "Javascript", "React Js"]}
+          tech={[
+            "HTML5",
+            "CSS",
+            "SASS",
+            "Tailwind",
+            "JavaScript",
+            "React Js",
+            "Framer Motion",
+          ]}
         />
         <TechCard
           title={"Backend"}
