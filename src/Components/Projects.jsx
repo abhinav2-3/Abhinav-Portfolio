@@ -26,6 +26,7 @@ const Projects = ({ title, data }) => {
                 title={item.title}
                 imgSrc={item.imgSrc}
                 hrefURL={item.hrefURL}
+                ytLink={item.ytLink}
                 techStack={item.techStack}
               />
             </motion.div>

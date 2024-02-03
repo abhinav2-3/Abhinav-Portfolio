@@ -2,7 +2,7 @@ import React from "react";
 import { PiMonitorPlayFill } from "react-icons/pi";
 import { FaExternalLinkAlt } from "react-icons/fa";
 
-const ProjectCard = ({ title, hrefURL, imgSrc, techStack }) => {
+const ProjectCard = ({ title, hrefURL, imgSrc, techStack, ytLink }) => {
   return (
     <div className="flex flex-col h-auto text-l_textColor dark:text-d_textColor overflow-hidden gap-2 overflow-ellipsis">
       <img
@@ -25,7 +25,7 @@ const ProjectCard = ({ title, hrefURL, imgSrc, techStack }) => {
             Demo <FaExternalLinkAlt size={15} className="ml-2" />
           </a>
           <a
-            href={hrefURL || "/"}
+            href={ytLink || "/"}
             target="_blank"
             className="flex place-items-center text-sm py-1 px-4 rounded-2xl duration-300 transition-all hover:border hover:text-red-500"
             rel="noreferrer"
