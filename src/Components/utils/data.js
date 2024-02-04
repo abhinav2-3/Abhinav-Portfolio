@@ -78,4 +78,4 @@ export const miniProjectsData = [
 ];
 
 export const resumeURL =
-  "https://drive.google.com/file/d/1F_B4KzPQRIMgCDYoLgCAON10P8oggI2J/view?usp=sharing";
+  "https://drive.google.com/file/d/1udePiK4QDY03vvjWqi2LA24omEHLWLCb/view?usp=drive_link";

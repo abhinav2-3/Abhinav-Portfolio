@@ -30,7 +30,7 @@ function App() {
           <main className="relative flex-1 pl-0 lg:pl-[263px]">
             <Header onToggleMenu={menuHandler} showMenu={showMenu} />
             <Hero />
-            <div className="p-4">
+            <div className="p-4 overflow-hidden">
               <Projects title={"Projects"} data={projectData} />
               <TechStacks />
               <About />

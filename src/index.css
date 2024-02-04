@@ -7,13 +7,18 @@
     transition: all 0.3s;
 }
 
+::selection {
+    background-color: black;
+    color: #ffffff;
+}
+
 .progress-bar {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 100;
-    background: red;
+    background: #ffffff;
 }
 
 #loader h1 {
