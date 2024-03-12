@@ -26,12 +26,13 @@ const TechStacks = () => {
             "Tailwind",
             "JavaScript",
             "React Js",
+            "Redux/Toolkit",
             "Framer Motion",
           ]}
         />
         <TechCard
           title={"Backend"}
-          tech={["Node Js", "Express Js", "Auth0"]}
+          tech={["Node Js", "Express Js", "Auth0","JWT"]}
           reference={ref}
         />
         <TechCard title={"Database"} tech={["MongoDB"]} reference={ref} />
